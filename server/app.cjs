@@ -154,7 +154,7 @@ class EnchantedTradingServer {
     });
 
     // Catch-all for undefined routes
-    this.app.use('/api/*', (req, res) => {
+    this.app.use('/api*', (req, res) => {
       res.status(404).json({
         success: false,
         message: 'API endpoint not found',
